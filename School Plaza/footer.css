@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 178, 34);
+    border-radius: 50px;
+    
+}
+
+footer{
+    display: inline-flex;
+}
+
+.copyright{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    
+}

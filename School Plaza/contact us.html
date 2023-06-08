@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="buy now.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="heading1">School Plaza</span>
+          <div class="linkbox">
+          <a href="index.html"><button type="button">Home</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="dropdown">
+        <button type="button">Our Products</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="dropdown-content">
+          <a href="bottles.html">Bottles</a>
+          <a href="textbooks.html">Textbooks</a>
+          <a href="drawingkits.html">Drawing Kits</a>
+        </div>
+      </div>
+        <a href="contact us.html"><button type="button">Contact Us</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href=""><button type="button" onclick="cart()">Cart</button></a>
+      </div>
+      </nav>
+    </header>
+
+    <main>
+          
+      <h1 class="title">Contact Us</h1>
+
+      <p class="p1">Feel Free To contact us and <br> we will get back to you as soon as we can.</p>
+
+      <form name="myform">
+        <label>Name:</label>
+        <br>
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <br><br>
+        <label>Email:</label>
+        <br>
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <br><br>
+        <label>Mobile No:</label>
+        <br>
+        <input type="number" name="mono" placeholder="Enter Your Mobile Number">
+        <br><br>
+        <label>Subject</label>
+        <br>
+        <input type="text" name="subject" placeholder="Enter Your Subject">
+        <br><br>
+        <label>Message</label>
+        <br>
+        <textarea name="message" cols="30" rows="10" placeholder="Message......"></textarea>
+
+        <input type="submit" onclick="send()" value="Send">
+      </form>
+      <br><br><br>
+      <hr>
+      <br>
+    </main>
+
+      <footer>
+        <div class="circle"></div>
+        <br><br>
+        <div class="copyright">&copy;CopyRight 2023 - @Krishna Dhiman</div>
+        <br>
+      </footer>
+
+      <script>
+        function send(){
+          let a = document.forms["myform"]["name"].value;
+          if(a==""){
+            alert("Please Enter Your Name")
+          }
+
+          let b = document.forms["myform"]["email"].value;
+          if(b==""){
+            alert("Please Enter Your Email")
+          }
+
+          let c = document.forms["myform"]["mono"].value;
+          if(c==""){
+            alert("Please Enter Your Mobile Number")
+          }
+
+          let d = document.forms["myform"]["subject"].value;
+          if(d==""){
+            alert("Please Enter Your Subject")
+          }
+
+          let e = document.forms["myform"]["message"].value;
+          if(e==""){
+            alert("Please Enter Your Message")
+          }
+
+          if(a!=="" & b!=="" & c!=="" & d!=="" & e!==""){
+            alert("Form Submitted")
+          }
+        }
+      </script>
+  </body>
+</html>
